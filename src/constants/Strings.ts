@@ -1,0 +1,118 @@
+import {Event, Student} from '../types/Event';
+
+export const appName = 'Festivo';
+export const tagline = 'DISCOVER. BOOK. EXPERIENCE.';
+
+export const starterStudent: Student = {
+  name: 'Aarav Sharma',
+  email: 'aarav@student.edu',
+  phone: '+91 9876543210',
+  college: 'NIT Trichy',
+  department: 'Computer Science',
+  year: '3rd Year',
+};
+
+export const sampleEvents: Event[] = [
+  {
+    id: 'college-fest-2026',
+    name: 'College Fest 2026',
+    college: 'NIT Trichy',
+    date: '14 Mar 2026',
+    time: '10:00 AM',
+    location: 'Open Air Theatre',
+    description:
+      'A vibrant three-day celebration with music, dance, food stalls, and cultural showcases from across campus.',
+    type: 'College Festival',
+    image: require('../assets/images/college_fest.jpg'),
+    fee: 0,
+    isFree: true,
+    isUpcoming: true,
+    isFeatured: true,
+    isTrending: false,
+    isRecentlyAdded: false,
+    coordinator: 'Vikram Aditya',
+    phone: '+91 9123456789',
+    rules: [
+      'Participants must bring their college ID cards.',
+      'Only registered students will be allowed entry.',
+      'Decorum and discipline must be maintained at the venue.',
+      'On-the-spot entries are subject to slot availability.',
+    ],
+  },
+  {
+    id: 'tech-symposium-2026',
+    name: 'Tech Symposium 2026',
+    college: 'IIT Madras',
+    date: '20 Apr 2026',
+    time: '9:30 AM',
+    location: 'Innovation Hall',
+    description:
+      'Explore AI, robotics, and startup talks from industry experts and student innovators.',
+    type: 'Technical Symposium',
+    image: require('../assets/images/tech_symposium.jpg'),
+    fee: 250,
+    isFree: false,
+    isUpcoming: true,
+    isFeatured: false,
+    isTrending: true,
+    isRecentlyAdded: false,
+    coordinator: 'Priya Iyer',
+    phone: '+91 9876123450',
+    rules: [
+      'Teams must consist of a maximum of 3 members.',
+      'Participants must bring their own laptops for the hackathon.',
+      'Plagiarism of code will lead to immediate disqualification.',
+      'Decisions of the judges will be final.',
+    ],
+  },
+  {
+    id: 'cultural-fest-2026',
+    name: 'Cultural Fest 2026',
+    college: 'Anna University',
+    date: '09 May 2026',
+    time: '6:00 PM',
+    location: 'Main Quadrangle',
+    description:
+      'An evening of dance, drama, fashion, and live music designed to celebrate artistic expression.',
+    type: 'Cultural Event',
+    image: require('../assets/images/cultural_fest.jpg'),
+    fee: 0,
+    isFree: true,
+    isUpcoming: false,
+    isFeatured: true,
+    isTrending: true,
+    isRecentlyAdded: true,
+    coordinator: 'Rahul Nair',
+    phone: '+91 9944556677',
+    rules: [
+      'Registration is mandatory to attend the concert.',
+      'Outside food and beverages are not allowed inside the quadrangle.',
+      'Strict adherence to slot timings is required for participants.',
+    ],
+  },
+  {
+    id: 'sports-meet-2026',
+    name: 'Sports Meet 2026',
+    college: 'BITS Pilani',
+    date: '02 Jun 2026',
+    time: '8:00 AM',
+    location: 'Sports Stadium',
+    description:
+      'An annual inter-collegiate sports championship featuring athletics, soccer, basketball, and indoor games.',
+    type: 'Sports Event',
+    image: require('../assets/images/sports_meet.jpg'),
+    fee: 150,
+    isFree: false,
+    isUpcoming: false,
+    isFeatured: false,
+    isTrending: false,
+    isRecentlyAdded: true,
+    coordinator: 'Rohit Sharma',
+    phone: '+91 9003322110',
+    rules: [
+      'Athletes must wear standard sports attire and shoes.',
+      'Referees decisions are final and binding.',
+      'Unsportsmanlike behavior will result in a team disqualification.',
+    ],
+  },
+];
