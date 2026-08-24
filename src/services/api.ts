@@ -1,8 +1,7 @@
 import { StorageService } from './StorageService';
 
-// Central API Base URL Configuration
-// Uses the computer's local IPv4 address (10.106.27.199:5000) so physical Android devices can connect over local Wi-Fi
-export const API_BASE_URL = 'http://172.27.123.199:5000';
+// Production API base URL for the deployed backend
+export const API_BASE_URL = 'https://festivo-fhhq.onrender.com';
 
 interface ApiOptions extends RequestInit {
   token?: string | null;
